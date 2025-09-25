@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+html { scroll-behavior: smooth; }
+
+/* Hide scrollbar for fragrance carousel */
+.scrollbar-hide { scrollbar-width: none; }
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+
+body { font-feature-settings: "ss01"; }
+
+::selection { background: #292524; color: #fff; }
