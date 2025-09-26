@@ -19,11 +19,11 @@ const Categories = () => {
           Extraordinary candles made by master perfumers in India.
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
-          {categories.map(cat => (
+          {categories.map((cat, i) => (
             <a
               key={cat.title}
               href="#bestsellers"
-              className="group relative block overflow-hidden"
+              className="group relative block overflow-hidden reveal" data-reveal-delay={100 + i * 80}
             >
               <div className="aspect-[3/4] w-full overflow-hidden">
                 <img

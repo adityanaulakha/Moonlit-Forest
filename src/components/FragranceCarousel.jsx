@@ -1,10 +1,10 @@
 import React, { useRef, useEffect, useState, useCallback } from 'react';
-import Img1 from '../assets/Img_1.jpg';
-import Img2 from '../assets/Img_2.jpg';
-import Img3 from '../assets/Img_3.jpg';
-import Img4 from '../assets/Img_4.jpg';
-import Img5 from '../assets/Img_5.jpg';
-import Img6 from '../assets/Img_6.jpg';
+import Img1 from '../assets/Img_14.png';
+import Img2 from '../assets/Img_15.png';
+import Img3 from '../assets/Img_16.png';
+import Img4 from '../assets/Img_17.png';
+import Img5 from '../assets/Img_18.png';
+import Img6 from '../assets/Img_19.png';
 
 // Extended list (replace or add real images later if needed)
 const fragrances = [

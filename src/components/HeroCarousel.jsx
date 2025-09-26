@@ -74,7 +74,7 @@ const HeroCarousel = () => {
   }, [next, prev]);
 
   return (
-    <section id="home" className="relative h-[540px] md:h-[600px] bg-black">
+  <section id="home" className="relative h-[520px] sm:h-[540px] md:h-[600px] bg-black">
       {/* Slides */}
       <div className="absolute inset-0 overflow-hidden">
         {slides.map((s, i) => (
@@ -98,22 +98,22 @@ const HeroCarousel = () => {
       </div>
       {/* Content card */}
       <div className="relative z-20 h-full flex items-end md:items-center">
-        <div className="w-full max-w-7xl mx-auto px-6 md:px-10 flex flex-col md:flex-row md:items-center gap-10">
-          <div className="max-w-lg backdrop-blur-sm/50">
-            <div className="inline-flex items-center gap-2 mb-6">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-10 flex flex-col md:flex-row md:items-center gap-8 md:gap-10 pb-10 md:pb-0">
+          <div className="max-w-xl backdrop-blur-sm/50">
+            <div className="inline-flex items-center gap-2 mb-5 sm:mb-6">
               <span className="h-px w-8 bg-amber-400/70" />
-              <span className="text-[11px] tracking-[0.35em] text-amber-300 font-medium">{slides[index].subtitle}</span>
+              <span className="text-[10px] sm:text-[11px] tracking-[0.28em] sm:tracking-[0.35em] text-amber-300 font-medium">{slides[index].subtitle}</span>
             </div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-light tracking-[0.08em] text-white mb-6">
+            <h1 className="font-light text-white mb-5 leading-[1.05] tracking-[0.05em] sm:tracking-[0.07em] text-[clamp(2.4rem,9vw,3.8rem)] sm:text-[clamp(2.8rem,7vw,4.2rem)] md:text-6xl">
               {slides[index].title}
             </h1>
-            <p className="text-stone-300/80 text-sm md:text-base leading-relaxed max-w-md mb-8">
+            <p className="text-stone-300/85 text-[13px] sm:text-sm md:text-base leading-relaxed max-w-md mb-7 sm:mb-8">
               Hand-poured small batch blends. Slow crafted aroma profiles designed to soften spaces & elevate quiet rituals.
             </p>
-            <div className="flex items-center gap-4">
+            <div className="flex flex-col xs:flex-row sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 w-full max-w-sm">
               <a
                 href="#bestsellers"
-                className="inline-flex items-center justify-center px-8 h-11 rounded-full bg-amber-400 text-black text-sm font-medium tracking-wide hover:brightness-110 active:scale-[0.97] transition shadow-[0_0_0_1px_rgba(255,255,255,0.2)_inset]"
+                className="inline-flex justify-center px-8 h-11 rounded-full bg-amber-400 text-black text-sm font-medium tracking-wide hover:brightness-110 active:scale-[0.97] transition shadow-[0_0_0_1px_rgba(255,255,255,0.2)_inset] w-full sm:w-auto"
               >
                 Shop Now
               </a>

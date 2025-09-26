@@ -9,3 +9,18 @@ html { scroll-behavior: smooth; }
 body { font-feature-settings: "ss01"; }
 
 ::selection { background: #292524; color: #fff; }
+
+/* Scroll reveal base */
+.reveal { opacity: 0; transform: translateY(40px); transition: opacity .9s cubic-bezier(.16,.8,.38,1), transform .9s cubic-bezier(.16,.8,.38,1); will-change: opacity, transform; }
+.reveal[data-reveal-delay="100"] { transition-delay:.1s; }
+.reveal[data-reveal-delay="200"] { transition-delay:.2s; }
+.reveal[data-reveal-delay="300"] { transition-delay:.3s; }
+.reveal[data-reveal-delay="400"] { transition-delay:.4s; }
+.reveal.is-visible { opacity:1; transform: translateY(0); }
+
+@media (prefers-reduced-motion: reduce) {
+	.reveal { opacity:1 !important; transform:none !important; transition:none !important; }
+}
+
+/* Optional subtle pulse for highlighted elements */
+@keyframes pulseGlow { 0% { opacity:0; transform:scale(.97); } 40% { opacity:1; } 100% { opacity:0; transform:scale(1); } }

@@ -1,5 +1,5 @@
 import React from 'react';
-import Img1 from '../assets/Img_2.jpg';
+import Img1 from '../assets/Img_12.png';
 
 const BlogSection = () => {
   return (

@@ -1,10 +1,10 @@
 import React from 'react';
-import Img1 from '../assets/Img_1.jpg';
-import Img2 from '../assets/Img_2.jpg';
-import Img3 from '../assets/Img_3.jpg';
-import Img4 from '../assets/Img_4.jpg';
-import Img5 from '../assets/Img_5.jpg';
-import Img6 from '../assets/Img_6.jpg';
+import Img1 from '../assets/Img_7.png';
+import Img2 from '../assets/Img_8.png';
+import Img3 from '../assets/Img_9.png';
+import Img4 from '../assets/Img_10.png';
+import Img5 from '../assets/Img_11.png';
+import Img6 from '../assets/Img_13.png';
 
 
 
@@ -26,8 +26,8 @@ const BestSellers = () => {
       <div className="max-w-[1480px] mx-auto px-4">
         <h2 className="text-center text-xl md:text-2xl font-serif tracking-wide text-stone-700 mb-14">Our Bestsellers</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-14 md:gap-10 xl:gap-20">
-          {bestSellers.map(p => (
-            <div key={p.id} className="group flex flex-col items-center">
+          {bestSellers.map((p, i) => (
+            <div key={p.id} className="group flex flex-col items-center reveal" data-reveal-delay={100 + i * 90}>
               <figure className="w-full overflow-hidden">
                 <div className="relative aspect-[4/5] overflow-hidden">
                   <img
